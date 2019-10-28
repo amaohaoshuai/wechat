@@ -1,0 +1,121 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <!-- 参考站连接 -->
+      <navigator url="/pages/cors/cors" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="{{settings.corsInfo.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">
+          {{settings.corsInfo.name}}
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          <span style="color:{{settings.corsInfo.textStyle}}">
+            差分站： {{settings.corsInfo.status?'已连接':'未连接'}}
+          </span>
+        </view>
+      </navigator>
+      <!-- 设备连接 -->
+      <navigator url="/pages/bluetooth/bluetooth" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="{{settings.facility.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">
+          {{settings.facility.name}}
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          <span wx:if="{{settings.facility.status}}" style="color:green">
+            定位模式： {{settings.facility.positionMode}} 
+            卫星数： {{settings.facility.count}}
+          </span>
+           <span wx:else style="color:red">
+            设备未连接
+          </span>
+        </view>
+      </navigator>
+      <!-- 差分通信模式 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="{{settings.communicationMode.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">
+          {{settings.communicationMode.name}}
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+    
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <!-- 本地导入 -->
+      <navigator url="/pages/uploader/uploader" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/file_download.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">本地导入</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <!-- 本地导出 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/file_upload.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">本地导出</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <!-- 数据下载 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/data_download.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">数据下载</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <!-- 数据上传 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/data_upload.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">数据上传</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <!-- 点校正 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/point_init.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">点校正</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <!-- 更多设置 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/help.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">更多设置</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <!-- 系统帮助 -->
+      <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/help.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">系统帮助</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+  </view>
+</view>

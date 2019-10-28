@@ -1,0 +1,56 @@
+<view class="weui-cells__title"></view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell ">
+    <view class="weui-cell__hd">
+      <view class="weui-label">服务器地址</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="digit" value="{{corsInfo.serverIp}}" bindinput="bindIp" auto-focus placeholder="请输入服务器地址" />
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">端口号</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="number" value="{{corsInfo.port}}" bindinput="bindPort" placeholder="请输入端口号" />
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">接入点</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="text" value="{{corsInfo.receivePoint}}" bindinput="bindRecPoint" placeholder="请输入接入点" />
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">用户名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="text" value="{{corsInfo.username}}" bindinput="bindName" placeholder="请输入用户名" />
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">密码</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="text" password="true" value="{{corsInfo.password}}" bindinput="bindPwd" placeholder="请输入密码" />
+    </view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd">
+      <view class="weui-label">备注</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="text" value="{{corsInfo.remark}}" bindinput="bindRemark" placeholder="备注" />
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title"></view>
+<view class="page__bd page__bd_spacing">
+  <button class="weui-btn" type="primary" bindtap="saveAndUse">保存并使用</button>
+  <button class="weui-btn" type="default" bindtap="onlySave">仅保存</button>
+</view>

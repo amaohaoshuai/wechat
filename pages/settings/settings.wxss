@@ -1,0 +1,8 @@
+/* pages/settings/settings.wxss */
+.mcd-text-color-red {
+  color: red;
+}
+
+.mcd-text-color-green {
+  color: green;
+}

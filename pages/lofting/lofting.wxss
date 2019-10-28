@@ -1,0 +1,24 @@
+/* pages/lofting/lofting.wxss */
+
+.point_id_show_1 {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 9px;
+}
+
+.point_id_show_2 {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.point_id_show_2 text, .point_id_show_1 text {
+  width: 30px;
+  color: white;
+  font-size: 18px;
+}

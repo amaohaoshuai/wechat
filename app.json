@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/lofting/lofting",
+    "pages/settings/settings",
+    "pages/logs/logs",
+    "pages/cors/cors",
+    "pages/uploader/uploader",
+    "pages/bluetooth/bluetooth"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#535353",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_sel.png",
+        "text": "工程管理"
+      },
+      {
+        "pagePath": "pages/lofting/lofting",
+        "iconPath": "/images/point_loft.png",
+        "selectedIconPath": "/images/point_loft_sel.png",
+        "text": "点放样"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "iconPath": "/images/settings.png",
+        "selectedIconPath": "/images/settings_sel.png",
+        "text": "系统设置"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
